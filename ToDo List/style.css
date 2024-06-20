@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
+    width: auto;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    height: 100px;
+    width: 400px;
+    background-image: url("Screenshot 2024-06-20 100219.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#login span {
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    border: 2px solid wheat;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+}
+
+#login span:hover {
+    color: #252212;
+    background-color: wheat;
+    transform: rotateZ(2deg);
+}
+
+#login :last-child{
+    margin-right: 100px;
+}
+#app {
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px  rgba(0, 0, 0, 0.1);
+    width: 60vw;
+    margin-top: 20px;
+}
+#app:hover{
+    box-shadow: 0 0 9px 10px rgba(0, 0, 0, 0.1);
+}
+
+#app h1 {
+    margin-top: 10px;
+}
+
+#new-task {
+    width: calc(100% - 50px);   
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 8px solid #eae543;
+    border-style: groove;
+    border-radius: 3px;
+    font-size: 1.1em; 
+}
+
+#make {
+    font-size: 1.05em;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .8s;
+}
+
+#make:hover {
+    background-color: #39c720;
+    transform: scale(1.05);
+    color: black;
+}
+#make:active {
+    color:#c91e1e;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+}
+
+#task-list li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#task-list li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+#task-list li:hover {
+    background: #f0f0f0;
+    transform: scale(1.02);
+}
+
+#task-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+    background: #f7f7f7;
+}
+
+#task-list li  #button2 {
+    color: #ea1414;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 8px;
+    transition: color 0.3s ease;
+    
+}
+#task-list li  #button1 {
+    color: #38e721;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 8px;
+    transition: color 0.3s ease;
+    
+}
+#task-list li #button1:hover {
+    background-color:#70d662;
+    color: rgb(1, 1, 1); 
+    transform: scale(1.02);
+}
+
+#task-list li #button2:hover {
+    background-color: #c94242; 
+    color: rgb(0, 0, 0); 
+    transform: scale(1.02);
+}
+
+
+#task-list li .task-content {
+    flex-grow: 1;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#task-list li .task-content span {
+    flex-grow: 1;
+}
+
+#task-list li .task-content input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#task-list li.completed .task-content span {
+    color: #888;
+}
+
+
+
